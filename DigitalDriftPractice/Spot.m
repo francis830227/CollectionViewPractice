@@ -9,5 +9,5 @@
 #import "Spot.h"
 
 @implementation Spot
-
+    
 @end

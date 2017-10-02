@@ -8,10 +8,11 @@
 
 #import "DataManager.h"
 #import "DataManager.h"
+#import "Spot.h"
 
 @implementation DataManager
 
--(void)fetchSpots {
+- (void)fetchSpots {
     
     NSMutableArray *spots = [[NSMutableArray alloc] init];
     
@@ -33,17 +34,28 @@
             NSLog(@"Error: %@", error);
             return;
         }
-        NSLog(@"%@", responseObject);
-       // NSArray *results = responseObject[@"result.results"];
-        
+
         NSArray *result = [responseObject valueForKey: @"result"];
         
         NSArray *results = [result valueForKey: @"results"];
         
-        for (NSDictionary *spotInDict in results) {
+        for (NSDictionary *spotResult in results) {
         
-        NSLog(@"%@", spotInDict);
-        
+            Spot *spot = [Spot new];
+            
+            spot.identifier = spotResult[@"_id"];
+            
+            spot.name = spotResult[@"Name"];
+            
+            spot.parkName = spotResult[@"ParkName"];
+            
+            spot.imageURLString = spotResult[@"Image"];
+            
+            spot.introduction = spotResult[@"Introduction"];
+            
+            [spots addObject: spot];
+            
+            [self.delegate didGet: spots];
         }
     }];
     

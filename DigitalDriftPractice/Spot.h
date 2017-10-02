@@ -16,8 +16,8 @@
 
 @property NSString *name;
 
-@property NSString *imageURL;
-
 @property NSString *introduction;
+    
+@property NSString *imageURLString;
 
 @end
