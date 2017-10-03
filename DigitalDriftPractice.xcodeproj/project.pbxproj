@@ -16,6 +16,7 @@
 		153C55C61F827D290008B223 /* Spot.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C55C51F827D290008B223 /* Spot.m */; };
 		15678AC01F82AABF0053AD6A /* SpotsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15678ABF1F82AABF0053AD6A /* SpotsCollectionViewController.m */; };
 		15678AC31F82AE3A0053AD6A /* SpotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15678AC21F82AE3A0053AD6A /* SpotCollectionViewCell.m */; };
+		15E53D681F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E53D671F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m */; };
 		6406CDFF2E7823DC2ECA02C6 /* libPods-DigitalDriftPractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5012B079C02337A56186B183 /* libPods-DigitalDriftPractice.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 		15678ABF1F82AABF0053AD6A /* SpotsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotsCollectionViewController.m; sourceTree = "<group>"; };
 		15678AC11F82AE3A0053AD6A /* SpotCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotCollectionViewCell.h; sourceTree = "<group>"; };
 		15678AC21F82AE3A0053AD6A /* SpotCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotCollectionViewCell.m; sourceTree = "<group>"; };
+		15E53D661F834F8E006D96C8 /* LGHorizontalLinearFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHorizontalLinearFlowLayout.h; sourceTree = "<group>"; };
+		15E53D671F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHorizontalLinearFlowLayout.m; sourceTree = "<group>"; };
 		39F6D25664F3FF6AE541DDDF /* Pods-DigitalDriftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalDriftPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-DigitalDriftPractice/Pods-DigitalDriftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		5012B079C02337A56186B183 /* libPods-DigitalDriftPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitalDriftPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B44CAD9D35EFE6DF9904979 /* Pods-DigitalDriftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalDriftPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DigitalDriftPractice/Pods-DigitalDriftPractice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 		15F906791F82C1F500DDFDB8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15E53D661F834F8E006D96C8 /* LGHorizontalLinearFlowLayout.h */,
+				15E53D671F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m */,
 				15678AC11F82AE3A0053AD6A /* SpotCollectionViewCell.h */,
 				15678AC21F82AE3A0053AD6A /* SpotCollectionViewCell.m */,
 			);
@@ -264,6 +269,7 @@
 				153C55BD1F8275380008B223 /* DataManager.m in Sources */,
 				15678AC31F82AE3A0053AD6A /* SpotCollectionViewCell.m in Sources */,
 				153C55B21F826F790008B223 /* main.m in Sources */,
+				15E53D681F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m in Sources */,
 				153C55A41F826F790008B223 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

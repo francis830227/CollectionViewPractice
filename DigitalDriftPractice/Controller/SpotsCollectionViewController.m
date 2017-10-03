@@ -67,7 +67,7 @@ DataManager *dataManager;
         
         cell.spotIntroductionLabel.text = spot.introduction;
         
-//        cell.spotImageView.contentMode = UIViewContentModeScaleAspectFit;
+        cell.spotImageView.contentMode = UIViewContentModeScaleAspectFill;
         
         [cell.spotImageView sd_setImageWithURL: [NSURL URLWithString: spot.imageURLString]];
     }
