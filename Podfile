@@ -7,6 +7,8 @@ target 'DigitalDriftPractice' do
 
   pod 'AFNetworking', '~> 3.0'
 
+  pod 'SDWebImage', '~> 4.0'
+
   # Pods for DigitalDriftPractice
 
 end

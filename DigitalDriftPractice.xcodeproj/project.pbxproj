@@ -13,8 +13,10 @@
 		153C55AF1F826F790008B223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153C55AD1F826F790008B223 /* LaunchScreen.storyboard */; };
 		153C55B21F826F790008B223 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C55B11F826F790008B223 /* main.m */; };
 		153C55BD1F8275380008B223 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C55BC1F8275380008B223 /* DataManager.m */; };
-		153C55C31F827C660008B223 /* SpotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C55C21F827C660008B223 /* SpotsViewController.m */; };
 		153C55C61F827D290008B223 /* Spot.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C55C51F827D290008B223 /* Spot.m */; };
+		15678AC01F82AABF0053AD6A /* SpotsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15678ABF1F82AABF0053AD6A /* SpotsCollectionViewController.m */; };
+		15678AC31F82AE3A0053AD6A /* SpotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15678AC21F82AE3A0053AD6A /* SpotCollectionViewCell.m */; };
+		15E53D681F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E53D671F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m */; };
 		6406CDFF2E7823DC2ECA02C6 /* libPods-DigitalDriftPractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5012B079C02337A56186B183 /* libPods-DigitalDriftPractice.a */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +31,14 @@
 		153C55B11F826F790008B223 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		153C55BB1F8275380008B223 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		153C55BC1F8275380008B223 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		153C55C11F827C660008B223 /* SpotsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotsViewController.h; sourceTree = "<group>"; };
-		153C55C21F827C660008B223 /* SpotsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotsViewController.m; sourceTree = "<group>"; };
 		153C55C41F827D290008B223 /* Spot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spot.h; sourceTree = "<group>"; };
 		153C55C51F827D290008B223 /* Spot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Spot.m; sourceTree = "<group>"; };
+		15678ABE1F82AABF0053AD6A /* SpotsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotsCollectionViewController.h; sourceTree = "<group>"; };
+		15678ABF1F82AABF0053AD6A /* SpotsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotsCollectionViewController.m; sourceTree = "<group>"; };
+		15678AC11F82AE3A0053AD6A /* SpotCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotCollectionViewCell.h; sourceTree = "<group>"; };
+		15678AC21F82AE3A0053AD6A /* SpotCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotCollectionViewCell.m; sourceTree = "<group>"; };
+		15E53D661F834F8E006D96C8 /* LGHorizontalLinearFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHorizontalLinearFlowLayout.h; sourceTree = "<group>"; };
+		15E53D671F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHorizontalLinearFlowLayout.m; sourceTree = "<group>"; };
 		39F6D25664F3FF6AE541DDDF /* Pods-DigitalDriftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalDriftPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-DigitalDriftPractice/Pods-DigitalDriftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		5012B079C02337A56186B183 /* libPods-DigitalDriftPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitalDriftPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B44CAD9D35EFE6DF9904979 /* Pods-DigitalDriftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalDriftPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DigitalDriftPractice/Pods-DigitalDriftPractice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,12 +79,9 @@
 			children = (
 				153C55A21F826F790008B223 /* AppDelegate.h */,
 				153C55A31F826F790008B223 /* AppDelegate.m */,
-				153C55BB1F8275380008B223 /* DataManager.h */,
-				153C55BC1F8275380008B223 /* DataManager.m */,
-				153C55C41F827D290008B223 /* Spot.h */,
-				153C55C51F827D290008B223 /* Spot.m */,
-				153C55C11F827C660008B223 /* SpotsViewController.h */,
-				153C55C21F827C660008B223 /* SpotsViewController.m */,
+				15F906781F82C1E000DDFDB8 /* Model */,
+				15F906791F82C1F500DDFDB8 /* View */,
+				15F9067A1F82C20600DDFDB8 /* Controller */,
 				153C55A81F826F790008B223 /* Main.storyboard */,
 				153C55AB1F826F790008B223 /* Assets.xcassets */,
 				153C55AD1F826F790008B223 /* LaunchScreen.storyboard */,
@@ -86,6 +89,37 @@
 				153C55B11F826F790008B223 /* main.m */,
 			);
 			path = DigitalDriftPractice;
+			sourceTree = "<group>";
+		};
+		15F906781F82C1E000DDFDB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				153C55BB1F8275380008B223 /* DataManager.h */,
+				153C55BC1F8275380008B223 /* DataManager.m */,
+				153C55C41F827D290008B223 /* Spot.h */,
+				153C55C51F827D290008B223 /* Spot.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15F906791F82C1F500DDFDB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15E53D661F834F8E006D96C8 /* LGHorizontalLinearFlowLayout.h */,
+				15E53D671F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m */,
+				15678AC11F82AE3A0053AD6A /* SpotCollectionViewCell.h */,
+				15678AC21F82AE3A0053AD6A /* SpotCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15F9067A1F82C20600DDFDB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15678ABE1F82AABF0053AD6A /* SpotsCollectionViewController.h */,
+				15678ABF1F82AABF0053AD6A /* SpotsCollectionViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		7655C80ECF81138936112AA7 /* Pods */ = {
@@ -230,10 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15678AC01F82AABF0053AD6A /* SpotsCollectionViewController.m in Sources */,
 				153C55C61F827D290008B223 /* Spot.m in Sources */,
 				153C55BD1F8275380008B223 /* DataManager.m in Sources */,
-				153C55C31F827C660008B223 /* SpotsViewController.m in Sources */,
+				15678AC31F82AE3A0053AD6A /* SpotCollectionViewCell.m in Sources */,
 				153C55B21F826F790008B223 /* main.m in Sources */,
+				15E53D681F834F8F006D96C8 /* LGHorizontalLinearFlowLayout.m in Sources */,
 				153C55A41F826F790008B223 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +348,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
@@ -359,8 +396,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};
@@ -373,9 +412,11 @@
 				DEVELOPMENT_TEAM = 78Y9MSJT25;
 				INFOPLIST_FILE = DigitalDriftPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.DigitalDriftPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
@@ -388,9 +429,11 @@
 				DEVELOPMENT_TEAM = 78Y9MSJT25;
 				INFOPLIST_FILE = DigitalDriftPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.DigitalDriftPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};
